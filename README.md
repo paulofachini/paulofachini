@@ -1,7 +1,9 @@
 ### Hi there 👋
 
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@paulofachini)
 [![Twitter Follow](https://img.shields.io/twitter/follow/paulofachini?style=social)](https://twitter.com/paulofachini)
 [![Linkedin Badge](https://img.shields.io/badge/-Add&nbsp;Me-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/paulofachini/)](https://www.linkedin.com/in/paulofachini/)
+
 
 <!--
 **paulofachini/paulofachini** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
