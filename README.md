@@ -3,6 +3,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/paulofachini?style=social)](https://twitter.com/paulofachini)
 [![Linkedin Badge](https://img.shields.io/badge/-Add&nbsp;Me-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/paulofachini/)](https://www.linkedin.com/in/paulofachini/)
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@paulofachini)
+[![Dev.to](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/paulofachini)
 
 <!--
 **paulofachini/paulofachini** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
