@@ -1,0 +1,29 @@
+{
+  "name": "paulofachini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulofachini/paulofachini.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulofachini/paulofachini/issues"
+  },
+  "homepage": "https://github.com/paulofachini/paulofachini#readme",
+  "scripts": {
+    "dev": "next dev",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "next": "^15.5.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
