@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/clone-tabnews",
+      "destination": "https://paulofachini-tabnews.vercel.app/"
+    },
+    {
+      "source": "/clone-tabnews/:path*",
+      "destination": "https://paulofachini-tabnews.vercel.app/:path*"
+    }
+  ]
+}
