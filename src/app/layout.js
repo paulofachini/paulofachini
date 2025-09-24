@@ -7,8 +7,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning={true}>
-      <body>{children}</body>
+    <html
+      lang="pt-BR"
+      suppressHydrationWarning={true}
+      className="theme-minimalist"
+    >
+      <body className="bg-dracula-dark">{children}</body>
     </html>
   );
 }

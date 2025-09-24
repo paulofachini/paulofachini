@@ -46,11 +46,10 @@ const SectionRenderer = ({ section, theme }) => {
 
 export default function Home() {
   return (
-    <div className="bg-dracula-dark min-h-screen text-dracula-foreground p-4 sm:p-8 md:p-12 lg:p-20 flex flex-col items-center">
-      <main className="rounded-xl shadow-lg w-full max-w-7xl flex flex-col md:flex-row overflow-hidden">
+    <div className="bg-theme-background min-h-screen text-theme-foreground p-4 sm:p-8 md:p-12 lg:p-20 flex flex-col items-center">
+      <main className="rounded-xl shadow-lg w-full max-w-7xl flex flex-col md:flex-row overflow-hidden bg-white border border-theme-border">
         <ProfileSidebar profileData={profileData} iconMap={IconMap} />
-
-        <div className="w-full md:w-2/3 p-8 bg-dracula-current-line flex flex-col justify-start">
+        <div className="w-full md:w-2/3 p-8 md:p-12 flex flex-col justify-start">
           {profileData.sections.map((section) => {
             const theme = sectionTheming[section.id] || "purple";
             return (
