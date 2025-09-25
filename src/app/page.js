@@ -9,10 +9,8 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { profileData } from "../data/profileData.js";
-import IntroSection from "../components/IntroSection";
-import ListSection from "../components/ListSection";
-import PortfolioGridSection from "../components/PortfolioGridSection";
 import ProfileSidebar from "../components/ProfileSidebar";
+import SectionContainer from "../components/SectionContainer";
 
 const IconMap = {
   FaBuilding,
@@ -25,41 +23,13 @@ const IconMap = {
   FaMediumM,
 };
 
-const sectionTheming = {
-  skills: "green",
-  works: "orange",
-  portfolio: "yellow",
-};
-
-const SectionRenderer = ({ section, theme }) => {
-  switch (section.type) {
-    case "intro":
-      return <IntroSection {...section} />;
-    case "list":
-      return <ListSection {...section} theme={theme} />;
-    case "portfolioGrid":
-      return <PortfolioGridSection {...section} theme={theme} />;
-    default:
-      return null;
-  }
-};
-
 export default function Home() {
   return (
     <div className="bg-theme-background min-h-screen text-theme-foreground p-4 sm:p-8 md:p-12 lg:p-20 flex flex-col items-center">
-      <main className="rounded-xl shadow-lg w-full max-w-7xl flex flex-col md:flex-row overflow-hidden bg-white border border-theme-border">
+      <main className="rounded-xl shadow-lg w-full max-w-7xl flex flex-col md:flex-row overflow-hidden bg-theme-background-card border border-theme-border">
         <ProfileSidebar profileData={profileData} iconMap={IconMap} />
         <div className="w-full md:w-2/3 p-8 md:p-12 flex flex-col justify-start">
-          {profileData.sections.map((section) => {
-            const theme = sectionTheming[section.id] || "purple";
-            return (
-              <SectionRenderer
-                key={section.id}
-                section={section}
-                theme={theme}
-              />
-            );
-          })}
+          <SectionContainer sections={profileData.sections} />
         </div>
       </main>
     </div>

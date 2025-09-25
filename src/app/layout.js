@@ -1,3 +1,4 @@
+import { Providers } from "../components/Providers";
 import "./globals.css";
 
 export const metadata = {
@@ -7,12 +8,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="pt-BR"
-      suppressHydrationWarning={true}
-      className="theme-minimalist"
-    >
-      <body className="bg-dracula-dark">{children}</body>
+    <html lang="pt-BR" suppressHydrationWarning={true}>
+      <body className="bg-theme-background transition-colors duration-300">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

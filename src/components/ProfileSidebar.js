@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function ProfileSidebar({ profileData, iconMap }) {
   const { name, tag, title, profileImage, company, location, contacts } =
@@ -13,7 +14,8 @@ export default function ProfileSidebar({ profileData, iconMap }) {
   const LocationIcon = iconMap[location.icon];
 
   return (
-    <div className="w-full md:w-1/3 p-8 bg-theme-background flex flex-col items-center md:items-start text-center md:text-left border-r border-theme-border">
+    <div className="relative w-full md:w-1/3 p-8 bg-theme-background flex flex-col items-center md:items-start text-center md:text-left border-r border-theme-border">
+      <ThemeSwitcher />
       <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-theme-primary mb-6 shadow-md">
         <Image
           src={profileImage}

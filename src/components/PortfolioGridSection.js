@@ -1,9 +1,14 @@
 import Image from "next/image";
 
-export default function PortfolioGridSection({ title, description, itens }) {
+export default function PortfolioGridSection({
+  title,
+  description,
+  itens,
+  titleClassName,
+}) {
   return (
     <div>
-      <h3 className="text-xl font-bold mb-4 text-theme-primary">{title}</h3>
+      <h3 className={`text-xl font-bold mb-4 ${titleClassName}`}>{title}</h3>
       <p className="text-theme-secondary leading-relaxed text-sm sm:text-base mb-4">
         {description}
       </p>
@@ -14,7 +19,7 @@ export default function PortfolioGridSection({ title, description, itens }) {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-lg overflow-hidden border border-theme-border bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            className="block rounded-lg overflow-hidden border border-theme-border bg-theme-background-card shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-theme-primary"
           >
             <Image
               src={item.image}
