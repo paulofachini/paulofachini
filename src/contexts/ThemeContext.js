@@ -4,15 +4,15 @@ import { createContext, useContext, useState, useEffect } from "react";
 
 const ThemeContext = createContext();
 
+const themeClasses = ["theme-minimalist", "theme-dracula", "theme-matrix"];
+
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState("dracula");
 
   useEffect(() => {
     const root = window.document.documentElement;
-    const isDracula = theme === "dracula";
-
-    root.classList.remove(isDracula ? "theme-minimalist" : "theme-dracula");
-    root.classList.add(isDracula ? "theme-dracula" : "theme-minimalist");
+    root.classList.remove(...themeClasses);
+    root.classList.add(`theme-${theme}`);
   }, [theme]);
 
   return (

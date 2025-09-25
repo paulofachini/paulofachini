@@ -14,7 +14,7 @@ export default function ProfileSidebar({ profileData, iconMap }) {
           alt={name}
           width={256}
           height={256}
-          className="rounded-full"
+          className="rounded-full profile-image transition-all duration-300"
         />
       </div>
 
@@ -33,7 +33,7 @@ export default function ProfileSidebar({ profileData, iconMap }) {
               {Icon && <Icon className="mr-2 text-base text-theme-primary" />}
               <a
                 href={link.url}
-                className="hover:underline text-theme-primary"
+                className="rounded-sm hover:underline text-theme-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-theme-primary focus-visible:ring-offset-theme-background"
                 target="_blank"
                 rel="noopener noreferrer"
               >

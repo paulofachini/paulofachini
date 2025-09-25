@@ -26,7 +26,7 @@ export default function PortfolioGridSection({
               alt={item.title}
               width={500}
               height={300}
-              className="object-cover"
+              className="object-cover portfolio-image transition-all duration-300"
             />
             <div className="p-4 text-theme-foreground">
               <h4 className="font-bold text-lg mb-1">{item.title}</h4>
