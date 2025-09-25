@@ -2,6 +2,7 @@ export const profileData = {
   name: "Paulo Luiz Fachini",
   tag: "@paulofachini",
   title: "Senior QA Engineer",
+  site: "https://paulofachini.dev.br/",
   profileImage: "/paulo-fachini-profile.jpg",
 
   keywords: [
@@ -9,7 +10,6 @@ export const profileData = {
       id: "hard-skills",
       title: "Habilidades Técnicas",
       words: [
-        "QA Engineer",
         "Automação de Testes",
         "Testes de API",
         "Testes de Performance",
@@ -18,6 +18,7 @@ export const profileData = {
         "Go",
         "JavaScript",
         "CSharp",
+        "Ruby",
       ],
     },
     {
