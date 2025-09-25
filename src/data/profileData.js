@@ -118,20 +118,20 @@ export const profileData = {
           title: "Página Pessoal",
           description:
             "Desenvolvi minha página pessoal utilizando React e Next.js",
-          image: "/portfolio-personal-page.png",
+          image: "/portfolio/personal-page.png",
           url: "https://github.com/paulofachini/paulofachini",
         },
         {
           title: "Clone Tabnews - em desenvolvimento 🚧",
           description:
             "Projeto criado como parte dos estudos do Curso de Programação do Filipe Deschamps `curso.dev`.",
-          image: "/portfolio-clone-tabnews.png",
+          image: "/portfolio/clone-tabnews.png",
           url: "https://github.com/paulofachini/clone-tabnews",
         },
         {
           title: "Control - em desenvolvimento 🚧",
           description: "Sistema para o controle financeiro pessoal.",
-          image: "/portfolio-control.png",
+          image: "/portfolio/control.png",
           url: "https://github.com/paulofachini/control",
         },
       ],
