@@ -1,23 +1,19 @@
 import { Providers } from "../components/Providers";
-import { profileData } from "../data/profileData";
+import * as siteMetadata from "../config/siteMetadata";
 import "./globals.css";
 
-const siteTitle = profileData.name;
-const siteDescription = `Portfólio de ${profileData.name}, ${profileData.title} especialista em automação de testes e qualidade de software.`;
-const siteKeywords = profileData.keywords.flatMap((group) => group.words);
-const siteUrl = "https://paulofachini.dev.br/";
-const ogImageUrl = `${siteUrl}/og-image.png`;
+const ogImageUrl = `${siteMetadata.siteUrl}/og`;
 
 export const metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(siteMetadata.siteUrl),
 
   title: {
-    default: siteTitle,
-    template: `%s | ${siteTitle}`,
+    default: siteMetadata.siteTitle,
+    template: `%s | ${siteMetadata.siteTitle}`,
   },
-  description: siteDescription,
-  keywords: siteKeywords,
-  authors: [{ name: profileData.name }],
+  description: siteMetadata.siteDescription,
+  keywords: siteMetadata.siteKeywords,
+  authors: [{ profileName: siteMetadata.profileName }],
 
   icons: {
     icon: [
@@ -30,16 +26,16 @@ export const metadata = {
   },
 
   openGraph: {
-    title: `${siteTitle} | ${profileData.title}`,
-    description: siteDescription,
+    title: siteMetadata.siteTitle,
+    description: siteMetadata.siteDescription,
     url: "/",
-    siteName: `Portfólio ${siteTitle}`,
+    siteName: siteMetadata.siteTitle,
     images: [
       {
         url: ogImageUrl,
         width: 1200,
         height: 630,
-        alt: `Imagem de apresentação do portfólio de ${siteTitle}`,
+        alt: `Imagem de apresentação de ${siteMetadata.profileName}`,
       },
     ],
     locale: "pt_BR",
@@ -48,9 +44,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: `${siteTitle} | ${profileData.title}`,
-    description: siteDescription,
-    creator: profileData.tag,
+    title: siteMetadata.siteTitle,
+    description: siteMetadata.siteDescription,
+    creator: siteMetadata.profileTag,
     images: [ogImageUrl],
   },
 
