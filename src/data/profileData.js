@@ -5,55 +5,78 @@ export const profileData = {
   profileImage: "/paulo-fachini-profile.jpg",
 
   keywords: [
-    "QA Engineer",
-    "Automação de Testes",
-    "Quality Assurance",
-    "Testes de API",
-    "Testes de Performance",
-    "Portfólio",
-    "Desenvolvedor",
-    "Go",
-    "JavaScript",
-    "CSharp",
+    {
+      id: "hard-skills",
+      title: "Habilidades Técnicas",
+      words: [
+        "QA Engineer",
+        "Automação de Testes",
+        "Testes de API",
+        "Testes de Performance",
+        "CI/CD",
+        "DevOps",
+        "Go",
+        "JavaScript",
+        "CSharp",
+      ],
+    },
+    {
+      id: "soft-skills",
+      title: "Habilidades Interpessoais",
+      words: [
+        "Comunicação",
+        "Trabalho em Equipe",
+        "Adaptabilidade",
+        "Resolução de Problemas",
+        "Resiliência",
+      ],
+    },
   ],
 
-  company: {
-    text: "Stone.Co / Pagar.me",
-    url: "https://www.stoneco.com.br/",
-    icon: "FaBuilding",
-  },
-  location: {
-    text: "Blumenau/SC",
-    url: "https://www.google.com/maps/place/Blumenau,+SC",
-    icon: "FaMapMarkerAlt",
-  },
-  contacts: {
-    email: {
+  links: [
+    {
+      id: "company",
+      text: "Stone.Co / Pagar.me",
+      url: "https://www.stoneco.com.br/",
+      icon: "FaBuilding",
+    },
+    {
+      id: "location",
+      text: "Blumenau/SC",
+      url: "https://www.google.com/maps/place/Blumenau,+SC",
+      icon: "FaMapMarkerAlt",
+    },
+    {
+      id: "email",
       text: "paulofachini@gmail.com",
       url: "mailto:paulofachini@gmail.com",
       icon: "FaEnvelope",
     },
-    linkedin: {
+    {
+      id: "linkedin",
       text: "linkedin.com",
       url: "https://www.linkedin.com/in/paulofachini",
       icon: "FaLinkedinIn",
     },
-    github: {
+    {
+      id: "github",
       text: "github.com",
       url: "https://github.com/paulofachini",
       icon: "FaGithub",
     },
-    devto: {
+    {
+      id: "devto",
       text: "dev.to",
       url: "https://dev.to/paulofachini",
       icon: "FaDev",
     },
-    medium: {
+    {
+      id: "medium",
       text: "medium.com",
       url: "https://medium.com/@paulofachini",
       icon: "FaMediumM",
     },
-  },
+  ],
 
   sections: [
     {

@@ -1,28 +1,10 @@
 "use client";
 
 import { useTheme } from "../contexts/ThemeContext";
+import { draculaAccentColors, draculaColorMap } from "../config/theme";
 import IntroSection from "./IntroSection";
 import ListSection from "./ListSection";
 import PortfolioGridSection from "./PortfolioGridSection";
-
-const draculaAccentColors = [
-  "cyan",
-  "green",
-  "orange",
-  "pink",
-  "yellow",
-  "red",
-];
-
-const titleColorMap = {
-  cyan: "text-theme-cyan",
-  green: "text-theme-green",
-  orange: "text-theme-orange",
-  pink: "text-theme-pink",
-  yellow: "text-theme-yellow",
-  red: "text-theme-red",
-  primary: "text-theme-primary",
-};
 
 const SectionRenderer = ({ section, titleClassName }) => {
   switch (section.type) {
@@ -45,12 +27,12 @@ export default function SectionContainer({ sections }) {
   return (
     <>
       {sections.map((section, index) => {
-        let titleClassName = titleColorMap.primary;
+        let titleClassName = "text-theme-primary";
 
         if (theme === "dracula") {
           const colorKey =
             draculaAccentColors[index % draculaAccentColors.length];
-          titleClassName = titleColorMap[colorKey];
+          titleClassName = draculaColorMap[colorKey] || draculaColorMap.primary;
         }
 
         return (

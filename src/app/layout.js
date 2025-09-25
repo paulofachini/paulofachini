@@ -4,7 +4,7 @@ import "./globals.css";
 
 const siteTitle = profileData.name;
 const siteDescription = `Portfólio de ${profileData.name}, ${profileData.title} especialista em automação de testes e qualidade de software.`;
-const siteKeywords = profileData.keywords;
+const siteKeywords = profileData.keywords.flatMap((group) => group.words);
 const siteUrl = "https://paulofachini.dev.br/";
 const ogImageUrl = `${siteUrl}/og-image.png`;
 
