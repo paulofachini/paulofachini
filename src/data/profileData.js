@@ -3,6 +3,20 @@ export const profileData = {
   tag: "@paulofachini",
   title: "Senior QA Engineer",
   profileImage: "/paulo-fachini-profile.jpg",
+
+  keywords: [
+    "QA Engineer",
+    "Automação de Testes",
+    "Quality Assurance",
+    "Testes de API",
+    "Testes de Performance",
+    "Portfólio",
+    "Desenvolvedor",
+    "Go",
+    "JavaScript",
+    "CSharp",
+  ],
+
   company: {
     text: "Stone.Co / Pagar.me",
     url: "https://www.stoneco.com.br/",
